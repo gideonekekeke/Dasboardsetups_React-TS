@@ -1,6 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { RxDashboard } from "react-icons/rx";
+import { RiEBike2Line, RiListOrdered2 } from "react-icons/ri";
+import { MdOutlineProductionQuantityLimits } from "react-icons/md";
+import { FaMoneyBillAlt } from "react-icons/fa";
+import { AiFillSetting } from "react-icons/ai";
+import { BiLogOutCircle } from "react-icons/bi";
 const SidebarContainer = styled.div`
 	/* Your sidebar styles here */
 	position: fixed;
@@ -27,7 +32,8 @@ const Icon = styled.div`
 const Hold = styled.div`
 	display: flex;
 	align-items: center;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
+	cursor: pointer;
 `;
 
 const Cont = styled.div`
@@ -49,37 +55,45 @@ const Sidebar: React.FC = () => {
 					<Hold>
 						<Icon>
 							{" "}
-							<RxDashboard />
+							<RiEBike2Line />
 						</Icon>
-						<Nav>Dashboard</Nav>
+						<Nav>Delievery</Nav>
 					</Hold>
 					<Hold>
 						<Icon>
 							{" "}
-							<RxDashboard />
+							<RiListOrdered2 />
 						</Icon>
-						<Nav>Dashboard</Nav>
+						<Nav>Order</Nav>
 					</Hold>
 					<Hold>
 						<Icon>
 							{" "}
-							<RxDashboard />
+							<MdOutlineProductionQuantityLimits />
 						</Icon>
-						<Nav>Dashboard</Nav>
+						<Nav>Products</Nav>
 					</Hold>
 					<Hold>
 						<Icon>
 							{" "}
-							<RxDashboard />
+							<FaMoneyBillAlt />
 						</Icon>
-						<Nav>Dashboard</Nav>
+						<Nav>Finance</Nav>
 					</Hold>
 					<Hold>
 						<Icon>
 							{" "}
-							<RxDashboard />
+							<AiFillSetting />
 						</Icon>
-						<Nav>Dashboard</Nav>
+						<Nav>Settings</Nav>
+					</Hold>
+
+					<Hold>
+						<Icon>
+							{" "}
+							<BiLogOutCircle />
+						</Icon>
+						<Nav>LogOut</Nav>
 					</Hold>
 				</Cont>
 			</Wrapper>

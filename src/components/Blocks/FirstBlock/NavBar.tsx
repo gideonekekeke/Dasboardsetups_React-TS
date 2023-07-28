@@ -57,7 +57,9 @@ const IconHold = styled.div`
 
 const Hold = styled.div``;
 const Uname = styled.div``;
-const UEmail = styled.div``;
+const UEmail = styled.div`
+color : gray
+`;
 
 const Navbar: React.FC = () => {
 	return (
@@ -70,7 +72,7 @@ const Navbar: React.FC = () => {
 					<IconHold>
 						<MdOutlineNotifications />
 					</IconHold>
-					<IconHold style={{ borderRadius: "360px" }}>NA</IconHold>
+					<IconHold style={{ borderRadius: "360px", fontSize : "12px" }}>NA</IconHold>
 					<Hold>
 						<Uname>name</Uname>
 						<UEmail>youremail@gmail.com</UEmail>
