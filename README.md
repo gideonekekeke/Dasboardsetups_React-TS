@@ -1,7 +1,7 @@
 # React + TypeScript
 
 This template provides a minimal setup of different web dashboard structure
-![Screenshot 2023-07-28 144008](https://github.com/gideonekekeke/Dasboardsetups_React-TS/assets/71523437/8e5e28e2-d892-450d-b347-766d0aa4645b)
+![Screenshot 2023-07-28 150845](https://github.com/gideonekekeke/Dasboardsetups_React-TS/assets/71523437/6d61e7f7-f955-43b8-b4be-a881942a26e6)
 
 Currently, two official plugins are available:
 
