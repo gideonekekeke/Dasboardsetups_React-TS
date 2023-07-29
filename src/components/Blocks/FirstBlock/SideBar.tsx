@@ -15,6 +15,10 @@ const SidebarContainer = styled.div`
 	width: 200px;
 	background-color: #101828;
 	color: white;
+
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
 `;
 
 const Wrapper = styled.div`

@@ -1,6 +1,8 @@
-import React from "react";
+import React, {useState} from "react";
 import styled from "styled-components";
 import { MdOutlineNotifications } from "react-icons/md";
+import { AiOutlineMenu } from "react-icons/ai";
+import MobileSidebar from "./MobileSideBar";
 
 const NavbarContainer = styled.div`
 	/* Your navbar styles here */
@@ -15,6 +17,10 @@ const NavbarContainer = styled.div`
 	align-items: center;
 	padding-left: 20px;
 	padding-right: 20px;
+
+	@media screen and (max-width: 768px) {
+		left: 0;
+	}
 `;
 
 const User = styled.div`
@@ -58,12 +64,33 @@ const IconHold = styled.div`
 const Hold = styled.div``;
 const Uname = styled.div``;
 const UEmail = styled.div`
-color : gray
+	color: gray;
+`;
+
+const Menu = styled.div`
+	display: none;
+
+	@media screen and (max-width: 768px) {
+		display: block;
+		cursor: pointer;
+		font-size: 25px;
+	}
 `;
 
 const Navbar: React.FC = () => {
+
+	const [show, setShow] = useState<boolean>(false)
+
+	const toggle = ()=>{
+		setShow(!show)
+	}
+
+
 	return (
 		<NavbarContainer>
+			<Menu onClick = {toggle}>
+				<AiOutlineMenu />
+			</Menu>
 			<Cont>
 				<Down>
 					<input placeholder='Search' />
@@ -72,13 +99,18 @@ const Navbar: React.FC = () => {
 					<IconHold>
 						<MdOutlineNotifications />
 					</IconHold>
-					<IconHold style={{ borderRadius: "360px", fontSize : "12px" }}>NA</IconHold>
+					<IconHold style={{ borderRadius: "360px", fontSize: "12px" }}>
+						NA
+					</IconHold>
 					<Hold>
 						<Uname>name</Uname>
 						<UEmail>youremail@gmail.com</UEmail>
 					</Hold>
 				</User>
 			</Cont>
+			{
+				show ? <MobileSidebar toggle = {toggle} show = {show}  /> : null
+			}
 		</NavbarContainer>
 	);
 };
