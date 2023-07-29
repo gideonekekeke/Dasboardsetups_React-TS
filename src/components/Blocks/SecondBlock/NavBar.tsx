@@ -8,7 +8,7 @@ const NavbarContainer = styled.div`
 	/* Your navbar styles here */
 	position: fixed;
 	top: 0;
-	left: 200px; /* Adjust this value to match the width of the Sidebar */
+	left: 0; /* Adjust this value to match the width of the Sidebar */
 	right: 0;
 	height: 60px;
 	background-color: #fff;
@@ -90,6 +90,7 @@ const Navbar: React.FC = () => {
 				<AiOutlineMenu />
 			</Menu>
 			<Cont>
+				<div>logo</div>
 				<Down>
 					<input placeholder='Search' />
 				</Down>

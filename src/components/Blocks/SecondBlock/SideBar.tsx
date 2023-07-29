@@ -9,7 +9,7 @@ import { BiLogOutCircle } from "react-icons/bi";
 const SidebarContainer = styled.div`
 	/* Your sidebar styles here */
 	position: fixed;
-	top: 0;
+	top: 60px;
 	left: 0;
 	bottom: 0;
 	width: 200px;
@@ -49,7 +49,7 @@ const Sidebar: React.FC = () => {
 	return (
 		<SidebarContainer>
 			<Wrapper>
-				<div>logo</div>
+				
 				<Cont>
 					<Hold>
 						<Icon>
