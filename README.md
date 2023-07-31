@@ -5,10 +5,13 @@ This template provides a minimal setup of different web dashboard structure
 
 ![Screenshot 2023-07-29 083410](https://github.com/gideonekekeke/Dasboardsetups_React-TS/assets/71523437/4c8746a8-be40-406f-a508-f35eb765791f)
 
+![Screenshot 2023-07-31 113401](https://github.com/gideonekekeke/Dasboardsetups_React-TS/assets/71523437/025c1039-d78f-474c-959f-f48805bb4183)
+
 Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
 
 ## configurations && Installation
 
